@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "lux-scraper"
+version = "0.1.0"
+description = ""
+authors = ["eugene-cha <eugene.cha@navercorp.com>"]
+readme = "README.md"
+packages = [{include = "lux_scraper"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+pandas = "^2.0.3"
+selenium = "^4.10.0"
+bs4 = "^0.0.1"
+beautifulsoup4 = "^4.12.2"
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.7.0"
+flake8 = "^6.0.0"
+mypy = "^1.4.1"
+pytest = "^7.4.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
